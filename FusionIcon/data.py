@@ -33,7 +33,7 @@ mesa_libgl_locations = (
 	'/usr/share/nvidia-glx/diversions/libGL.so.1.2',
 )
 
-compiz_args = ['ccp', '--replace', '--sm-disable', '--ignore-desktop-hints']
+compiz_args = ['ccp', '--replace', '--sm-disable']
 
 config_home = os.environ.get('XDG_CONFIG_HOME',
 			os.path.join(os.environ['HOME'], '.config'))
@@ -75,6 +75,18 @@ wms = {
 	'kwin':
 		('kde', ['kwin', '--replace'],
 		 'KWin', 'kde', None, None),
+		 
+	# Add blackPanther OS and Plasma 5 support
+
+	'kwin_x11':
+		('kwin_x11', ['kwin_x11', '--replace'],
+		 'Plasma 5', 'kde', None, None),
+
+	'kwin_wayland':
+		('kwin_wayland', ['kwin__wayland', '--replace'],
+		 'Plasma5 Wayland ', 'kde', None, None),
+
+	# End - add blackPanther OS and Plasma 5 support
 
 	'xfwm4':
 		('xfwm4', ['xfwm4'],
