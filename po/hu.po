@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-04 12:54+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Barcza Károly <kbarcza@blackpanther.hu>\n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+
+#: FusionIcon/interface_qt/main.py:91
+msgid "Reload Window Manager"
+msgstr "Ablakkezelő újratöltése"
+
+#: FusionIcon/interface_qt/main.py:92
+msgid "Select Window Manager"
+msgstr "Ablakkezelő választása"
+
+#: FusionIcon/interface_qt/main.py:93
+msgid "Compiz Options"
+msgstr "Compiz opciók"
+
+#: FusionIcon/interface_qt/main.py:94
+msgid "Select Window Decorator"
+msgstr "Ablakdekoráció választása"
+
+#: FusionIcon/interface_qt/main.py:96
+msgid "Quit"
+msgstr "Kilépés"
+
+#: FusionIcon/util.py:253
+msgid " * Not setting decorator to none"
+msgstr ""
+
+#: FusionIcon/util.py:270
+msgid " * Searching for installed applications..."
+msgstr " * Telepített alkalmazások keresése..."
+
+#: FusionIcon/environment.py:62
+msgid " * Detected Session: "
+msgstr " * Felismert folyamat:"
+
+#: FusionIcon/environment.py:81
+msgid " * Error: xvinfo not installed!"
+msgstr " * Hiba: az xvinfo nincs telepítve!:"
+
+#: fusion-icon:26
+msgid ""
+" * Error: the \"FusionIcon\" module is missing.\n"
+" If you did not install fusion-icon to /usr, you may need to add the "
+"appropriate site-packages directory to your PYTHONPATH"
+msgstr ""
+"* Hiba: a \"FusionIkon\" modul nem található.\n"
+" If you did not install fusion-icon to /usr, you may need to add the "
+"appropriate site-packages directory to your PYTHONPATH"
+
+#: fusion-icon:34
+#, python-format
+msgid " * Configuration file (\"%s\") being reset"
+msgstr "* A  (\"%s\")  beállítófájl alaphelyzetbe lett állíŧva"
+
+#: fusion-icon:39
+#, python-format
+msgid " ... backed up to: %s"
+msgstr "... biztonsági mentés készült ide: %s"
+
+#: fusion-icon:42
+msgid " ... no configuration file found"
+msgstr "... nem található konfigurációs fájl"
+
+#: fusion-icon:45
+msgid " *** Error: configuration reset failed:"
+msgstr " *** Hiba: a configuráció alaphelyzetbe állítása sikertelen:"
+
+#: fusion-icon:51
+#, python-format
+msgid " * Sleeping for %s seconds"
+msgstr " * Felfüggesztve %s másodpercre"

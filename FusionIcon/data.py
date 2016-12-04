@@ -49,10 +49,10 @@ config_file = os.path.join(config_folder, 'fusion-icon')
 apps = {
 	'ccsm':
 		('ccsm', ['ccsm'],
-		'Settings Manager'),
+		_('Settings Manager')),
 	'emerald theme manager':
 		('emerald-theme-manager', ['emerald-theme-manager'],
-		'Emerald Theme Manager'),
+		_('Emerald Theme Manager')),
 }
 
 #wm
@@ -75,8 +75,6 @@ wms = {
 	'kwin':
 		('kde', ['kwin', '--replace'],
 		 'KWin', 'kde', None, None),
-		 
-	# Add blackPanther OS and Plasma 5 support
 
 	'kwin_x11':
 		('kwin_x11', ['kwin_x11', '--replace'],
@@ -85,8 +83,6 @@ wms = {
 	'kwin_wayland':
 		('kwin_wayland', ['kwin__wayland', '--replace'],
 		 'Plasma5 Wayland ', 'kde', None, None),
-
-	# End - add blackPanther OS and Plasma 5 support
 
 	'xfwm4':
 		('xfwm4', ['xfwm4'],
@@ -117,11 +113,11 @@ wms = {
 decorators = {
 	'emerald':
 		('emerald', 'emerald --replace',
-		 'Emerald', None),
+		 _('Emerald'), None),
 
 	'gwd':
 		('gtk-window-decorator', 'gtk-window-decorator --replace',
-		 'GTK+ Window Decorator', 'mate'),
+		 _('GTK+ Window Decorator'), 'mate'),
 }
 
 #option:
@@ -130,8 +126,8 @@ decorators = {
 
 options = {
 	'indirect rendering':
-		(None, '--indirect-rendering', 'Indirect Rendering'),
+		(None, '--indirect-rendering', _('Indirect Rendering')),
 
 	'loose binding':
-		(None, '--loose-binding', 'Loose Binding'),
+		(None, '--loose-binding', _('Loose Binding')),
 }

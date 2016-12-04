@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# blackPanther OS - Fusion Icon translation support
+#
+# xgettext --copyright-holder='Charles Barcza' --msgid-bugs-address=bugs@blackpanther.hu \
+# -o project.pot ../src/project/*.py ../src/project/*.glade
+
+
+languages="hu de it se"
+transdir="po/"
+project="fusion-icon"
+
+find -name "*.in" -o -name "*.py" >translist
+echo ./$project >> translist
+cat translist | xargs xgettext --default-domain=$project -L Python --keyword=_ --keyword=i18n -o $project.pot
+
+mkdir -p $transdir
+for i in $languages ;do
+    if [ ! -f  $transdir$i.po ];then
+	echo "MSGINIT...."
+	msginit --no-translator -l $i -i $project.pot -o $transdir$i.po
+    else
+	echo "Already exists ->  $transdir$i.po"
+	msgmerge $transdir$i.po $project.pot  >$transdir$project-$i.po
+	mv $transdir$project-$i.po $transdir$i.po
+	echo $project-$i.po
+    fi
+done

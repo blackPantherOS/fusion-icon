@@ -19,17 +19,11 @@
 # Original copyright 2007 Christopher Williams <christopherw@verizon.net>
 # Author(s): crdlb, kozec, raveit65
 
-import os, compizconfig, time
-try:
-    import configparser
-except ImportError:
-    # Python 2.x compatibility.
-    import ConfigParser as configparser
-
-import FusionIcon.data as _data
-from FusionIcon.parser import options as parser_options
-from FusionIcon.environment import env
-from FusionIcon.execute import run
+import os, compizconfig, ConfigParser, time
+import data as _data
+from parser import options as parser_options
+from environment import env
+from execute import run
 import subprocess, signal
 
 def is_running(app):
@@ -256,7 +250,7 @@ class CompizDecorators(dict):
 			self.command.Value = self[decorator].command
 			self.command.Plugin.Context.Write()
 		elif not decorator:
-			print(' * Not setting decorator to none')
+			print(_(' * Not setting decorator to none'))
 
 	def __get(self):
 		_decorator = [d for d in self if self.command.Value == self[d].command]
@@ -273,7 +267,7 @@ class CompizDecorators(dict):
 class Installed(object):
 
 	def __init__(self, data):
-		print(' * Searching for installed applications...')
+		print(_(' * Searching for installed applications...'))
 
 		### Compiz Detection
 		bins = {}
@@ -353,11 +347,11 @@ class Installed(object):
 			if data.options[option][1] not in compiz_optionlist:
 				del self.options[option]
 
-class Configuration(configparser.ConfigParser):
+class Configuration(ConfigParser.ConfigParser):
 
 	def __init__(self, data):
 
-		configparser.ConfigParser.__init__(self)
+		ConfigParser.ConfigParser.__init__(self)
 		self.config_folder = data.config_folder
 		self.config_file = data.config_file
 

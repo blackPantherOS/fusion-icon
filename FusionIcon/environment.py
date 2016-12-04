@@ -18,7 +18,7 @@
 # Author(s): crdlb, nesl247, raveit65
 
 import os
-from FusionIcon.execute import run
+from execute import run
 
 tfp = 'GLX_EXT_texture_from_pixmap'
 
@@ -59,7 +59,7 @@ Xgl: True in Xgl'''
 		else:
 			self.desktop = os.getenv('DESKTOP_SESSION', 'unknown').lower()
 
-		print(' * Detected Session: ' + self.desktop)
+		print _(' * Detected Session: ' + self.desktop)
 
 
 		## Save the output of glxinfo and xvinfo for later use:
@@ -78,7 +78,7 @@ Xgl: True in Xgl'''
 		if run(['which', 'xvinfo'], 'call', quiet=True) == 0:
 			self.xvinfo = run('xvinfo', 'output')
 		else:
-			raise SystemExit(' * Error: xvinfo not installed!')
+			raise SystemExit(_(' * Error: xvinfo not installed!'))
 
 		self.glx_vendor = None
 		line = [l for l in self.glxinfo.splitlines() if 'client glx vendor string:' in l]

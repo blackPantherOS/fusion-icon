@@ -17,8 +17,8 @@
 # Original copyright 2007 Christopher Williams <christopherw@verizon.net>
 # Author(s): crdlb, nesl247, raveit65
 
-from FusionIcon.parser import options as parser_options
-from FusionIcon.util import env, config, apps, options, wms, decorators
+from parser import options as parser_options
+from util import env, config, apps, options, wms, decorators
 
 def init():
 	'Final start function, should be called once when fusion-icon starts'
@@ -40,16 +40,16 @@ if not parser_options.force_compiz:
 	if wms.active not in wms:
 		print(' * "' + wms.active + '" not installed')
 		if wms.fallback:
-			print(' ... setting to fallback...')
+			print _(' ... setting to fallback...')
 		else:
-			print(' ... No fallback window manager chosen')
+			print _(' ... No fallback window manager chosen')
 		wms.active = wms.fallback
 
 elif 'compiz' in wms:
 	wms.active = 'compiz'
 
 else:
-	raise SystemExit(' *** Error: "--force-compiz" used and compiz not installed!')
+	raise SystemExit(_(' *** Error: "--force-compiz" used and compiz not installed!'))
 
 # Set True if using Xorg AIGLX since the '--indirect-rendering' option has no effect in that situation. 
 env.set()

@@ -88,12 +88,12 @@ class Build(QtWidgets.QApplication):
 		if 'ccsm' in apps or 'emerald theme manager' in apps:
 			self.Tray.menu.addSeparator()
 
-		self.Tray.menu.addAction(QtGui.QIcon.fromTheme('view-refresh'), 'Reload Window Manager', self.reload_wm)
-		self.Tray.menu.addAction(QtGui.QIcon.fromTheme('view-restore'), 'Select Window Manager').setMenu(self.Tray.managerMenu)
-		self.Tray.menu.addAction(QtGui.QIcon.fromTheme('document-properties'), 'Compiz Options').setMenu(self.Tray.optionsMenu)
-		self.Tray.menu.addAction(QtGui.QIcon.fromTheme('window-new'), 'Select Window Decorator').setMenu(self.Tray.decoratorMenu)
+		self.Tray.menu.addAction(QtGui.QIcon.fromTheme('view-refresh'), _('Reload Window Manager'), self.reload_wm)
+		self.Tray.menu.addAction(QtGui.QIcon.fromTheme('view-restore'), _('Select Window Manager')).setMenu(self.Tray.managerMenu)
+		self.Tray.menu.addAction(QtGui.QIcon.fromTheme('document-properties'), _('Compiz Options')).setMenu(self.Tray.optionsMenu)
+		self.Tray.menu.addAction(QtGui.QIcon.fromTheme('window-new'), _('Select Window Decorator')).setMenu(self.Tray.decoratorMenu)
 		self.Tray.menu.addSeparator()
-		self.Tray.menu.addAction(QtGui.QIcon.fromTheme('application-exit'), 'Quit', self.exit)
+		self.Tray.menu.addAction(QtGui.QIcon.fromTheme('application-exit'), _('Quit'), self.exit)
 		self.Tray.setContextMenu(self.Tray.menu)
 		self.Tray.show()
 		self.Tray.activated.connect(self.showMenu)
