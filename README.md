@@ -5,7 +5,7 @@ Fusion Icon (Compiz tray icon) for Compiz 0.8.x series.
 
 Logo
 ----------
-![fusion-icon](https://raw.githubusercontent.com/blackPantherOS/fusion-icon/master/images/scalable/fusion-icon.svg)
+![fusion-icon](https://raw.githubusercontent.com/blackPantherOS/fusion-icon/master/images/48x48/fusion-icon.png)
 
 
 Screenshot
