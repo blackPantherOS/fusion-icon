@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-04 12:54+0100\n"
+"POT-Creation-Date: 2016-12-04 15:30+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Barcza Károly <kbarcza@blackpanther.hu>\n"
 "Language-Team: \n"
@@ -18,25 +17,61 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.8\n"
 
-#: FusionIcon/interface_qt/main.py:91
+#: FusionIcon/data.py:52
+msgid "Settings Manager"
+msgstr "Beállítások kezelése"
+
+#: FusionIcon/data.py:55
+msgid "Emerald Theme Manager"
+msgstr "Emerald téma kezelő"
+
+#: FusionIcon/data.py:116
+msgid "Emerald"
+msgstr "Emerald"
+
+#: FusionIcon/data.py:120
+msgid "GTK+ Window Decorator"
+msgstr "GTK+ Ablakdekoráció"
+
+#: FusionIcon/data.py:129
+msgid "Indirect Rendering"
+msgstr "Közvetett leképzés"
+
+#: FusionIcon/data.py:132
+msgid "Loose Binding"
+msgstr ""
+
+#: FusionIcon/interface_qt/main.py.in:91
 msgid "Reload Window Manager"
 msgstr "Ablakkezelő újratöltése"
 
-#: FusionIcon/interface_qt/main.py:92
+#: FusionIcon/interface_qt/main.py.in:92
 msgid "Select Window Manager"
 msgstr "Ablakkezelő választása"
 
-#: FusionIcon/interface_qt/main.py:93
+#: FusionIcon/interface_qt/main.py.in:93
 msgid "Compiz Options"
 msgstr "Compiz opciók"
 
-#: FusionIcon/interface_qt/main.py:94
+#: FusionIcon/interface_qt/main.py.in:94
 msgid "Select Window Decorator"
 msgstr "Ablakdekoráció választása"
 
-#: FusionIcon/interface_qt/main.py:96
+#: FusionIcon/interface_qt/main.py.in:96
 msgid "Quit"
 msgstr "Kilépés"
+
+#: FusionIcon/start.py:43
+msgid " ... setting to fallback..."
+msgstr ""
+
+#: FusionIcon/start.py:45
+msgid " ... No fallback window manager chosen"
+msgstr ""
+
+#: FusionIcon/start.py:52
+msgid " *** Error: \"--force-compiz\" used and compiz not installed!"
+msgstr ""
 
 #: FusionIcon/util.py:253
 msgid " * Not setting decorator to none"

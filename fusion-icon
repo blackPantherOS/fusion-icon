@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # This file is part of Fusion-icon.
 
 # Fusion-icon is free software; you can redistribute it and/or modify
@@ -14,15 +14,16 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import os, sys, time, signal
+import os, sys, time
+
+import gettext
+gettext.install("fusion-icon", "/usr/share/locale")
 
 try:
 	import FusionIcon
 
 except ImportError:
-	raise SystemExit(' * Error: the "FusionIcon" module is missing. If you did not install fusion-icon to /usr, you may need to add the appropriate site-packages directory to your PYTHONPATH')
-
-signal.signal(signal.SIGINT, signal.SIG_DFL)
+	raise SystemExit(_(' * Error: the "FusionIcon" module is missing.\n If you did not install fusion-icon to /usr, you may need to add the appropriate site-packages directory to your PYTHONPATH'))
 
 # parse command line
 from FusionIcon.parser import options
@@ -30,24 +31,24 @@ from FusionIcon.parser import options
 if options.reset:
 	try:
 		from FusionIcon.data import config_file
-		print(' * Configuration file (' + config_file + ') being reset')
+		print _(' * Configuration file ("%s") being reset' %config_file)
 
 		if os.path.exists(config_file):
 			config_backup = '%s.backup.%s' %(config_file, time.strftime('%Y%m%d%H%M%S'))
 			os.rename(config_file, config_backup)
-			print(' ... backed up to: ' + config_backup)
+			print _(' ... backed up to: %s' %config_backup)
 
 		else:
-			print(' ... no configuration file found')
+			print _(' ... no configuration file found')
 
 	except:
-		print(' *** Error: configuration reset failed:')
+		print _(' *** Error: configuration reset failed:')
 		raise SystemExit
 
 	sys.exit()
 
 if options.seconds and 0 < options.seconds <= 60:
-	print(' * Sleeping for ' + options.seconds + ' seconds')
+	print _(' * Sleeping for %s seconds' %options.seconds)
 	time.sleep(options.seconds)
 
 if options.no_interface:

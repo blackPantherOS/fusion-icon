@@ -1,0 +1,14 @@
+./FusionIcon/data.py
+./FusionIcon/parser.py
+./FusionIcon/interface.py
+./FusionIcon/interface_qt/main.py.in
+./FusionIcon/interface_qt/__init__.py
+./FusionIcon/interface_gtk/main.py.in
+./FusionIcon/interface_gtk/__init__.py
+./FusionIcon/execute.py
+./FusionIcon/start.py
+./FusionIcon/util.py
+./FusionIcon/environment.py
+./FusionIcon/__init__.py
+./setup.py
+./fusion-icon
