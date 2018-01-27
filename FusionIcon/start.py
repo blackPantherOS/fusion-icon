@@ -17,8 +17,8 @@
 # Original copyright 2007 Christopher Williams <christopherw@verizon.net>
 # Author(s): crdlb, nesl247, raveit65
 
-from parser import options as parser_options
-from util import env, config, apps, options, wms, decorators
+from FusionIcon.parser import options as parser_options
+from FusionIcon.util import env, config, apps, options, wms, decorators
 
 def init():
 	'Final start function, should be called once when fusion-icon starts'
@@ -27,9 +27,9 @@ def init():
 		# Do not restart the wm if it's already running
 		if wms.active == wms.active == wms.old != 'compiz':
 			#always restart compiz since we can't know compiz was started correctly
-			print(' * ' + wms[wms.active].label + ' is already running')
+			print _(' * ' + wms[wms.active].label + ' is already running')
 		else:
-			print(' * Starting ' + wms[wms.active].label)
+			print _(' * Starting ' + wms[wms.active].label)
 			wms.start()
 
 config.check()
@@ -38,7 +38,7 @@ config.check()
 
 if not parser_options.force_compiz:
 	if wms.active not in wms:
-		print(' * "' + wms.active + '" not installed')
+		print _(' * "' + wms.active + '" not installed')
 		if wms.fallback:
 			print _(' ... setting to fallback...')
 		else:

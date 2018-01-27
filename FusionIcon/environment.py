@@ -18,7 +18,7 @@
 # Author(s): crdlb, nesl247, raveit65
 
 import os
-from execute import run
+from FusionIcon.execute import run
 
 tfp = 'GLX_EXT_texture_from_pixmap'
 
@@ -78,7 +78,7 @@ Xgl: True in Xgl'''
 		if run(['which', 'xvinfo'], 'call', quiet=True) == 0:
 			self.xvinfo = run('xvinfo', 'output')
 		else:
-			raise SystemExit(_(' * Error: xvinfo not installed!'))
+			raise SystemExit(' * Error: xvinfo not installed!')
 
 		self.glx_vendor = None
 		line = [l for l in self.glxinfo.splitlines() if 'client glx vendor string:' in l]

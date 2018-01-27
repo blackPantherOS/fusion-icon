@@ -3,53 +3,39 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-12-04 15:30+0100\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Barcza Károly <kbarcza@blackpanther.hu>\n"
-"Language-Team: \n"
-"Language: hu\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
-
-msgid "Fusion Icon"
-msgstr "Fuzió ikon"
-
-msgid "Start and manage Compiz"
-msgstr "Indítja és kezeli a Compizt"
-
-msgid ""
-"This package provides a tray icon that allows one to easily enable, disable "
-"and restart Compiz, and change the currently used window manager and/or "
-"window decorator."
-msgstr "Ez a csomag egy tálca ikont biztosít ami könnűvé teszi a Compiz"
-"bekapcsolását, kikapcsolását és újraindítását, és cserélheted a jelenlegi"
-"ablakkezelőt vagy az ablak dekorációt."
 
 #: FusionIcon/data.py:52
 msgid "Settings Manager"
-msgstr "Beállítások kezelése"
+msgstr ""
 
 #: FusionIcon/data.py:55
 msgid "Emerald Theme Manager"
-msgstr "Emerald téma kezelő"
+msgstr ""
 
 #: FusionIcon/data.py:116
 msgid "Emerald"
-msgstr "Emerald"
+msgstr ""
 
 #: FusionIcon/data.py:120
 msgid "GTK+ Window Decorator"
-msgstr "GTK+ Ablakdekoráció"
+msgstr ""
 
 #: FusionIcon/data.py:129
 msgid "Indirect Rendering"
-msgstr "Közvetett leképzés"
+msgstr ""
 
 #: FusionIcon/data.py:132
 msgid "Loose Binding"
@@ -57,23 +43,23 @@ msgstr ""
 
 #: FusionIcon/interface_qt/main.py.in:91
 msgid "Reload Window Manager"
-msgstr "Ablakkezelő újratöltése"
+msgstr ""
 
 #: FusionIcon/interface_qt/main.py.in:92
 msgid "Select Window Manager"
-msgstr "Ablakkezelő választása"
+msgstr ""
 
 #: FusionIcon/interface_qt/main.py.in:93
 msgid "Compiz Options"
-msgstr "Compiz opciók"
+msgstr ""
 
 #: FusionIcon/interface_qt/main.py.in:94
 msgid "Select Window Decorator"
-msgstr "Ablakdekoráció választása"
+msgstr ""
 
 #: FusionIcon/interface_qt/main.py.in:96
 msgid "Quit"
-msgstr "Kilépés"
+msgstr ""
 
 #: FusionIcon/start.py:43
 msgid " ... setting to fallback..."
@@ -93,15 +79,15 @@ msgstr ""
 
 #: FusionIcon/util.py:270
 msgid " * Searching for installed applications..."
-msgstr " * Telepített alkalmazások keresése..."
+msgstr ""
 
 #: FusionIcon/environment.py:62
 msgid " * Detected Session: "
-msgstr " * Felismert folyamat:"
+msgstr ""
 
 #: FusionIcon/environment.py:81
 msgid " * Error: xvinfo not installed!"
-msgstr " * Hiba: az xvinfo nincs telepítve!:"
+msgstr ""
 
 #: fusion-icon:26
 msgid ""
@@ -109,29 +95,26 @@ msgid ""
 " If you did not install fusion-icon to /usr, you may need to add the "
 "appropriate site-packages directory to your PYTHONPATH"
 msgstr ""
-"* Hiba: a \"FusionIkon\" modul nem található.\n"
-" If you did not install fusion-icon to /usr, you may need to add the "
-"appropriate site-packages directory to your PYTHONPATH"
 
 #: fusion-icon:34
 #, python-format
 msgid " * Configuration file (\"%s\") being reset"
-msgstr "* A  (\"%s\")  beállítófájl alaphelyzetbe lett állíŧva"
+msgstr ""
 
 #: fusion-icon:39
 #, python-format
 msgid " ... backed up to: %s"
-msgstr "... biztonsági mentés készült ide: %s"
+msgstr ""
 
 #: fusion-icon:42
 msgid " ... no configuration file found"
-msgstr "... nem található konfigurációs fájl"
+msgstr ""
 
 #: fusion-icon:45
 msgid " *** Error: configuration reset failed:"
-msgstr " *** Hiba: a configuráció alaphelyzetbe állítása sikertelen:"
+msgstr ""
 
 #: fusion-icon:51
 #, python-format
 msgid " * Sleeping for %s seconds"
-msgstr " * Felfüggesztve %s másodpercre"
+msgstr ""
