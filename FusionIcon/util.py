@@ -70,7 +70,7 @@ class CompizOption(object):
 		return self.config.getboolean('compiz options', self.name)
 
 	def __set(self, value):
-		print(' * Setting option ' + self.label + ' to ' + value)
+		print(' * Setting option ' + self.label + ' to ' + str(value))
 		self.config.set('compiz options', self.name, str(bool(value)).lower())
 		self.config.write(open(self.config.config_file, 'w'))
 
@@ -238,7 +238,7 @@ class CompizDecorators(dict):
 			self.default = 'emerald'
 
 		elif self:
-			self.default = self.keys()[0]
+			self.default = next(iter(self))
 
 	def __set(self, decorator):
 		if decorator in self:
